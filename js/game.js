@@ -26,4 +26,24 @@ var Game = function(){
     });
     
     
+    var li  = [],
+        svg = d3.select("svg")
+    
+    $("path").click(function(){
+        if($(this).attr("style").match(/fill/)=="fill" && li.length == 0){
+            li=[$(this)[0].id]
+            $(this).css("fill","yellow");
+        }
+        else{
+            li.push($(this)[0].id);
+            if(li.length == 3){
+                var nID =  "arrow"+li[1].replace("path","")+"-"+li[2].replace("path","")
+                $("#"+li[0]).attr("id",nID)
+                $("#"+nID).attr("class","hidden");
+                li=[]
+            }
+        }
+    });
+    
+    
 }

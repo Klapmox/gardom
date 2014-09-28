@@ -188,7 +188,9 @@ div#menu-parts>div.selected{
     height:auto;
 }
 
-
+.hidden{
+    display:none;
+}
 
 
 
