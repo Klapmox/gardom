@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Russo";
+    src: url("../font/Russo_Sans_Bold.otf");
+}
+
+body{
+    background:#444;
+    text-align:center;
+    margin-right:60px;
+    color:white;
+}
+
+h1#title{
+    font-family: "Russo";
+    text-align:left;
+    color:white;
+    opacity:0.1;
+    position:fixed;
+    font-size:3em;
+    margin-right:16px;
+    margin-top:-8px;
+    transition:all 0.8s;
+}
+
+h1#title>img.carrot{
+    height:80px;
+    margin-bottom:-16px;
+    margin-top:-8px;
+}
+
+h1#title:hover{
+    opacity:1;
+}
+
+g{
+    opacity:0.1;
+    cursor:pointer;
+    transition:all 0.8s;
+}
+g text{
+    opacity:0;
+    transition:all 0.8s;
+}
+    
+g.blue,
+g.green,
+g.red{
+    opacity:0.3;
+    transition:all 0.8s;
+}
+
+g:hover,
+g:hover text{
+    opacity:1;
+}
+
+g>path{
+    fill:white;
+}
+
+g.green>path{
+    fill:#9dff84;
+}
+
+g.red>path{
+    fill:#ff474d;
+}
+
+g.blue>path{
+    fill:cyan;
+}
+
+div#color.red{
+    background:#ff474d;
+}
+
+div#color>img{
+    transition:all 0.8s;
+    transform:rotate(-90deg);
+}
+
+div#color.open>img{
+    transform:rotate(90deg);
+}
+
+div#map,
+aside{
+    transition:all 0.8s;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+aside{
+    width:400px;
+    border-top:solid 2px white;
+    border-bottom:solid 2px white;
+    color:white;
+    padding:16px;
+    text-align:left;
+    opacity:0;
+}
+
+nav{
+    transition:all 0.8s;
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    background:#333;
+    width:80px;
+    overflow-x:hidden;
+}
+
+div#menu{
+    position:fixed;
+    width:80px;
+    display:block;
+    min-height:80px;
+}
+
+div.menuBlock{
+    width:80px;
+    height:80px;
+    display:block;
+    cursor:pointer;
+    transition:background 0.8s;
+}
+
+div.menuBlock>img{
+    transition:all 0.8s;
+    width:40px;
+    margin-top:20px;
+    opacity:0.5;
+}
+
+div.menuBlock>img:hover,
+div.menuBlock.selected>img{
+    opacity:1;
+}
+
+div.elt-menu.selected{
+    background:#252525;
+}
+
+div.elt-menu:hover{
+    background:#222;
+}
+
+div.elt-menu:active{
+    box-shadow: inset 0 0 0.7em black;
+}
+
+div#infos{
+    transition:all 0.8s;
+    min-width:0;
+    min-height:80px;
+    width:420px;
+    margin-left:80px;
+}
+
+div#borderTop{
+    transition:all 0.8s;
+    height:80px;
+    background:#ff983d;
+    width:0px;
+}
+
+
+div.domine>img{
+    width:50px;
+    margin-bottom:-20px;
+    margin-right:8px;
+}
+
+
+div#menu-parts{
+    margin:8px;
+    text-align:left;
+}
+
+div#menu-parts>div{
+    transition:all 0.8s;
+    height:0px;
+    overflow-y:hidden;
+}
+
+div#menu-parts>div.selected{
+    height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
