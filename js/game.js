@@ -29,6 +29,17 @@ var Game = function(){
     var li  = [],
         svg = d3.select("svg")
     
+    
+    
+    
+}
+
+
+
+
+
+
+function updateArrowsId(){
     $("path").click(function(){
         if($(this).attr("style").match(/fill/)=="fill" && li.length == 0){
             li=[$(this)[0].id]
@@ -44,6 +55,4 @@ var Game = function(){
             }
         }
     });
-    
-    
 }
